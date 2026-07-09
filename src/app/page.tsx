@@ -62,7 +62,7 @@ const TIPS: Tip[] = [
   },
   {
     title: "Foto dari atas",
-    subtitle: "Tegak lurus di atas gundukan",
+    subtitle: "Arahkan kamera tepat dari atas, jangan miring",
     bg: "#B39DDB",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
@@ -85,14 +85,19 @@ const TIPS: Tip[] = [
     ),
   },
   {
-    title: "Jangan gunakan zoom",
-    subtitle: "Foto tanpa zoom untuk menjaga kualitas dan akurasi warna",
+    title: "Fokus pada area yang berubah warna",
+    subtitle: "Pastikan area pasir yang berubah warna mengisi sebagian besar frame foto",
     bg: "#B39DDB",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-        <circle cx="10" cy="10" r="6" stroke="#fff" strokeWidth="2" />
-        <path d="M8 10h4" stroke="#fff" strokeWidth="2" strokeLinecap="round" />
-        <path d="M14.5 14.5L20 20" stroke="#fff" strokeWidth="2" strokeLinecap="round" />
+        <circle cx="12" cy="12" r="7" stroke="#fff" strokeWidth="2" />
+        <circle cx="12" cy="12" r="2.5" fill="#fff" />
+        <path
+          d="M12 2v3M12 19v3M2 12h3M19 12h3"
+          stroke="#fff"
+          strokeWidth="2"
+          strokeLinecap="round"
+        />
       </svg>
     ),
   },
