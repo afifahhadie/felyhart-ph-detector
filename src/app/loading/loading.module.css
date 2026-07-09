@@ -1,0 +1,59 @@
+.screen {
+  min-height: 100dvh;
+  background: linear-gradient(180deg, #8b7bc4 0%, #b497c9 45%, #f0c3d2 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.catWrap {
+  width: 120px;
+  height: 120px;
+  animation: fh-bounce 1.4s ease-in-out infinite;
+}
+
+.eye {
+  transform-origin: center;
+  animation: fh-blink 3.4s infinite;
+}
+
+.message {
+  font-family: var(--font-fredoka), sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  color: #fff;
+  margin-top: 26px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  animation: fh-dot 1.2s infinite;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.subMessage {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 10px;
+  font-weight: 500;
+}

@@ -1,0 +1,147 @@
+.screen {
+  height: 100dvh;
+  background: linear-gradient(
+    180deg,
+    #8b7bc4 0%,
+    #a98fc7 26%,
+    #dda9c0 62%,
+    #f7d3d9 100%
+  );
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.inner {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 40px 22px 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.cloud {
+  position: absolute;
+  left: 16px;
+  top: 56px;
+  width: 120px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.title {
+  font-family: var(--font-fredoka), sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.15;
+  color: #ec5a93;
+  margin: 18px 0 8px;
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.35);
+  flex-shrink: 0;
+}
+
+.subtitle {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #4a3960;
+  margin: 0 0 16px;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 4px;
+  min-height: 0;
+}
+
+.card {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 22px;
+  padding: 14px 16px;
+  backdrop-filter: blur(4px);
+  flex-shrink: 0;
+}
+
+.iconBox {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cardTitle {
+  font-weight: 700;
+  font-size: 14px;
+  color: #3a2e4d;
+}
+
+.cardSubtitle {
+  font-size: 12.5px;
+  color: #6b5b7f;
+}
+
+.bottomBar {
+  flex-shrink: 0;
+  padding: 10px 22px calc(22px + env(safe-area-inset-bottom));
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.scrollHint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 10px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.scrollHint.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.scrollHintText {
+  font-size: 12px;
+  color: #6b5b7f;
+  font-weight: 600;
+}
+
+.scrollHintArrow {
+  animation: fh-hint-bounce 1.2s ease-in-out infinite;
+}
+
+.ctaButton {
+  width: 100%;
+  border: none;
+  background: #ec5a93;
+  color: #fff;
+  font-family: var(--font-fredoka), sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px -6px rgba(236, 90, 147, 0.55);
+  cursor: pointer;
+}
+
+.ctaButton:hover {
+  background: #e04684;
+}
