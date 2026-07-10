@@ -111,6 +111,12 @@
   align-items: center;
   gap: 5px;
   cursor: pointer;
+  transition: transform 120ms ease, opacity 120ms ease;
+}
+
+.actionButton:active {
+  transform: scale(0.96);
+  opacity: 0.9;
 }
 
 .actionButtonPrimary {
